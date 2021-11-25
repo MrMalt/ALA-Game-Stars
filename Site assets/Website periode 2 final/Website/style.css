@@ -1,0 +1,717 @@
+/* Vars */
+:root {
+  --main-bg-color: #c70000;
+  --secondary-bg-color: #960000;
+  --main-grey-color: #333;
+  --main-red-color: #c70000;
+  --secondary-red-color: #960000;
+  --main-blue-color: #0b53bf;
+  --secondary-blue-color: #0a4091;
+  --main-green-color: #1da840;
+  --secondary-green-color: #186e2e;
+  --main-yellow-color: #ffd000;
+  --secondary-yellow-color: #b89600;
+  --main-orange-color: #ff8812;
+  --secondary-orange-color: #c46b14;
+  --main-purple-color: #a900cf;
+  --secondary-purple-color: #6e0087;
+  --main-turq-color: #29ba9d;
+  --secondary-turq-color: #21967f;
+  --main-lgrey-color: #8a8a8a;
+  --secondary-lgrey-color: #6e6e6e;
+  --main-pink-color: #ecb6c1;
+  --secondary-pink-color: #d6a3ad;
+  --main-lblue-color: #74b0cf;
+  --secondary-lblue-color: #5a8aa3;
+}
+
+/* HTML */
+html, body
+{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+ }
+
+body
+{
+  background-color: #ffffff;
+}
+
+/* Header */
+header {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: var(--main-bg-color);
+}
+
+.headerCloud {
+  background-color: var(--main-blue-color);
+}
+
+.headerHardware {
+  background-color: var(--main-green-color);
+}
+
+.headerCrypto {
+  background-color: var(--main-yellow-color);
+}
+
+.headerCyberSec {
+  background-color: var(--main-orange-color);
+}
+
+.headerData {
+  background-color: var(--main-purple-color);
+}
+
+.headerITT {
+  background-color: var(--main-turq-color);
+}
+
+.headerNetwerken {
+  background-color: var(--main-lgrey-color);
+}
+
+.headerGames {
+  background-color: var(--main-pink-color);
+}
+
+.headerProLang {
+  background-color: var(--main-lblue-color);
+}
+
+
+header figure {
+	padding: 0;
+	margin: 0;
+}
+
+header img {
+	height: 6em;
+	margin: 1em auto;
+  border-radius: 100%;
+  box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.88);
+}
+
+/* Navbar */
+
+#navbar li a:hover, .dropdown:hover .dropbtn {
+  background-color:  #111111;
+}
+
+#navbar li.dropdown {
+  display: inline-block;
+}
+
+#navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#navbar .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#navbar .dropdown-content a:hover {background-color: #f1f1f1}
+
+#navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#navbar
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--main-grey-color);
+}
+
+#navbar li 
+{
+  float: left;
+}
+
+#navbar li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover 
+{
+  background-color: #111111;
+}
+
+#navbar .selected {
+  background-color: var(--secondary-bg-color);;
+}
+
+#navbar .selectedCloud {
+  background-color: var(--secondary-blue-color);;
+}
+
+#navbar .selectedHardware {
+  background-color: var(--secondary-green-color);;
+}
+
+#navbar .selectedCrypto {
+  background-color: var(--secondary-yellow-color);;
+}
+
+#navbar .selectedCyberSec {
+  background-color: var(--secondary-orange-color);;
+}
+
+#navbar .selectedData {
+  background-color: var(--secondary-purple-color);;
+}
+
+#navbar .selectedITT {
+  background-color: var(--secondary-turq-color);;
+}
+
+#navbar .selectedNetwerken {
+  background-color: var(--secondary-lgrey-color);;
+}
+
+#navbar .selectedGames {
+  background-color: var(--secondary-pink-color);;
+}
+
+#navbar .selectedProLang {
+  background-color: var(--secondary-lblue-color);;
+}
+
+/*Index*/
+
+.spacer {
+  width: 100%;
+  height: 2em;
+  background-color: #C70000;
+  border-bottom: solid 6px #333;
+  margin: 2em 0;
+}
+
+.indexDisclaimer {
+  width: 100%;
+}
+
+.indexDisclaimer h1, .indexDisclaimer p {
+  background-color: #eb8d8d;
+  border: 2px solid #c70000;
+  text-align: center;
+  font-size: 20px;
+  color: #c70000;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.indexText {
+  width: 90%;
+  margin: 2em auto;
+}
+
+.indexTextContainer {
+  display: flex;
+  margin: 2em 0;
+}
+
+.buttonHolder {
+  width: 100%;
+}
+
+.indexContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2em;
+  grid-column-gap: 2em;
+  list-style: none;
+  margin: 2em auto;
+  padding: 0;
+}
+
+.buttonTemplate{
+  display: block;
+  padding: 1em;
+  width: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #C70000;
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  transition: background 0.2s;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.buttonTemplate:hover {
+   background-color: #333 !important;
+   color: white !important;
+  }
+
+/*floatButton*/
+
+#floatButton {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--main-bg-color);
+  border: 4px solid #333;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  transition: visibility 0s, opacity 0.2s linear;
+  z-index: 1;
+}
+
+/*catagoryInfo */
+
+.catagoryInfo {
+  width: 87vw;
+  margin: 2em auto;
+}
+
+.summaryImage {
+  display: block;
+  margin: 2em auto;
+  width: 50em;
+  max-width: 80vw;
+}
+
+/*alphabetNavBar*/
+
+.alphabetNavBar {
+  text-align: center;
+  margin: 1em 0 2em 0;
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: #333;
+}
+
+.alphabetNavBarP a {
+  color: var(--main-bg-color);
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.alphabetNavBarPHardware a {
+  color: var(--main-green-color);
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.alphabetNavBarPCloud a {
+  color: var(--main-blue-color);
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.alphabetNavBarPCrypto a {
+  color: var(--main-yellow-color);
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.alphabetNavBarPCyberSec a {
+  color: var(--main-orange-color);
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.alphabetNavBarPData a {
+  color: var(--main-purple-color);
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.alphabetNavBarPITT a {
+  color: var(--main-turq-color);
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.alphabetNavBarPNetwerken a {
+  color: var(--main-lgrey-color);
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.alphabetNavBarPGames a {
+  color: var(--main-pink-color);
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.alphabetNavBarPProLang a {
+  color: var(--main-lblue-color);
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.alphabetNavBar a:hover{
+  color: var(--main-grey-color);;
+}
+
+/* ExpandButtons */
+.wordListContainer {
+  margin: 1em;
+}
+
+.wordListContainerEmpty {
+  display: none;
+}
+
+.letterTitle {
+  margin: 0 auto;
+  background-color: var(--main-bg-color);
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.letterTitle h1 {
+  color: white;
+  padding: 0.5em 0.5em 0.5em 0.75em;
+}
+
+.letterTitleCloud {
+  margin: 0 auto;
+  background-color: var(--main-blue-color);
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.letterTitleCloud h1 {
+  color: white;
+  padding: 0.5em 0.5em 0.5em 0.75em;
+}
+
+.letterTitleCrypto {
+  margin: 0 auto;
+  background-color: var(--main-yellow-color);
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.letterTitleCrypto h1 {
+  color: white;
+  padding: 0.5em 0.5em 0.5em 0.75em;
+}
+
+.letterTitleHardware {
+  margin: 0 auto;
+  background-color: var(--main-green-color);
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.letterTitleHardware h1 {
+  color: white;
+  padding: 0.5em 0.5em 0.5em 0.75em;
+}
+
+.letterTitleCyberSec {
+  margin: 0 auto;
+  background-color: var(--main-orange-color);
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.letterTitleCyberSec h1 {
+  color: white;
+  padding: 0.5em 0.5em 0.5em 0.75em;
+}
+
+.letterTitleData {
+  margin: 0 auto;
+  background-color: var(--main-purple-color);
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.letterTitleData h1 {
+  color: white;
+  padding: 0.5em 0.5em 0.5em 0.75em;
+}
+
+.letterTitleITT {
+  margin: 0 auto;
+  background-color: var(--main-turq-color);
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.letterTitleITT h1 {
+  color: white;
+  padding: 0.5em 0.5em 0.5em 0.75em;
+}
+
+.letterTitleNetwerken {
+  margin: 0 auto;
+  background-color: var(--main-lgrey-color);
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.letterTitleNetwerken h1 {
+  color: white;
+  padding: 0.5em 0.5em 0.5em 0.75em;
+}
+
+.letterTitleGames {
+  margin: 0 auto;
+  background-color: var(--main-pink-color);
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.letterTitleGames h1 {
+  color: white;
+  padding: 0.5em 0.5em 0.5em 0.75em;
+}
+
+.letterTitleProLang {
+  margin: 0 auto;
+  background-color: var(--main-lblue-color);
+  width: 90vw;
+  border-radius: 10px;
+}
+
+.letterTitleProLang h1 {
+  color: white;
+  padding: 0.5em 0.5em 0.5em 0.75em;
+}
+
+#wordList
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  list-style: none;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.expandButtonBox {
+  margin: 1em;
+}
+
+.expandButton {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--main-grey-color);
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  transition: background 0.2s;
+  border-radius: 10px;
+}
+
+.expandButton::after {
+  content: "\25be";
+  float: right;
+  transform: scale(1.5);
+}
+
+.expandButton--active {
+  background-color: #555;
+  border-radius: 10px 10px 0 0;
+}
+
+.expandButton--active::after {
+  content: "\25b4";
+}
+
+.expandButtonContent {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
+  padding: 0 1em;
+  background-color: #eee;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Footer */
+footer
+{
+  text-align: center;
+  background-color: var(--main-bg-color);
+  padding: 0;
+  color: #ffffff;
+  height: 2.1em;
+  border-top: 1em solid var(--main-grey-color);
+  text-decoration-style: none;
+}
+
+.footerHardware
+{
+  background-color: var(--main-green-color);
+}
+
+.footerCloud
+{
+  background-color: var(--main-blue-color);
+}
+
+.footerCrypto
+{
+  background-color: var(--main-yellow-color);
+}
+
+.footerCyberSec
+{
+  background-color: var(--main-orange-color);
+}
+
+.footerData
+{
+  background-color: var(--main-purple-color);
+}
+
+.footerITT
+{
+  background-color: var(--main-turq-color);
+}
+
+.footerNetwerken
+{
+  background-color: var(--main-lgrey-color);
+}
+
+.footerNetwerken
+{
+  background-color: var(--main-lgrey-color);
+}
+
+.footerGames
+{
+  background-color: var(--main-pink-color);
+}
+
+.footerProLang
+{
+  background-color: var(--main-lblue-color);
+}
+
+footer p
+{
+  margin: 0.5em;
+}
+
+/* About us */
+
+.textBox {
+  width: 90vw;
+  margin: 2em auto;
+}
+
+.textBox h1 {
+  font-size: 24px;
+}
+
+.textBox h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+#employeeList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  list-style: none;
+  width: 90vw;
+  margin: 2em auto;
+  padding: 0;
+}
+
+#employeeList li {
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+}
+
+.employeeInfo h2 {
+  margin: 1em;
+  color: #fff;
+  font-size: 20px;
+}
+
+.employeeInfo p {
+  color: #fff;
+  margin: 0.5em 1.2em;
+}
+
+.employeeInfoImage {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.employeeInfo img {
+  width: 100%;
+  margin: 1.2em auto;
+  border-radius: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 600px)
+{
+  /* Navbar */
+  #navbar {
+    font-size: 0.7em;
+  }
+
+  /*employeeList*/
+
+  #employeeList {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+
+  #employeeList li {
+    width: 100%;
+  }
+
+}
