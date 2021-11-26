@@ -3,6 +3,10 @@
 *, html {
     margin: 0;
     padding: 0;
+    color:#99aab5;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 
 /* Nav Bar */
@@ -12,7 +16,7 @@ nav{
     width: 100vw;
     display: flex;
     position: fixed;
-    background-color: #222120;
+    background-color: #424549;
     box-shadow: 0 3px 20px rgba(0,0,0,0.2);
 }
 
@@ -39,8 +43,8 @@ nav{
 }
 
 .nav-links li a:hover{
-    color:#000;
-    background-color: #fff;
+    color:white;
+    background-color: #36393e;
     padding: 10px;
     border-radius: 5px;
 }
