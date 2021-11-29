@@ -116,6 +116,14 @@ nav{
     margin: 0 0 1.5em 0;
 }
 
+.articleTitle {
+    color: #a3a3a5;
+    font-size: 22px;
+    margin: 0.7em 1em;
+    font-family: 'Franklin Gothic Medium', arial;
+    text-decoration: underline;
+}
+
 .sideMain {
     display: flex;
 }
@@ -165,10 +173,27 @@ nav{
     z-index: 20;
 }
 
-.articleTitle {
-    color: #a3a3a5;
-    font-size: 22px;
-    margin: 0.7em 1em;
+/* News */
+
+.newsSnippet {
+    background-color: #26272b;
+    border-radius: 15px;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.newsTitle {
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium', arial;
-    text-decoration: underline;
+    margin: 0.5rem 1rem;
+    padding-top: 1rem;
+    color: #a1a2a4;
+}
+
+.newsContent {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', arial;
+    margin: 0.5rem 1rem;
+    color: #5c5d60;
+    padding-bottom: 1rem;
 }
