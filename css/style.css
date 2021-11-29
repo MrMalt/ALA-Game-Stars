@@ -1,4 +1,5 @@
 /* General */
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 
 *, html {
     margin: 0;
@@ -9,6 +10,23 @@ body {
     overflow: hidden;
     background-color: #202225;
 }
+
+/* Scroll-Bars */
+
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff1f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #88888877;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #88888833;
+  }
 
 /* header */
 
@@ -21,18 +39,28 @@ header {
     margin: 0 0.8em;
 }
 
+.pageTitle {
+    display: inline;
+    position: relative;
+    font-weight: 200;
+    font-size: 30px;
+    bottom: 0.25em;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Spinnaker', sans-serif;
+}
+
 /* Nav Bar */
 
 .sideTopSpacer {
     display: inline;
-    width: 5%;
+    width: 3%;
 }
 
 nav{
     display: inline;
     background-color: #36393f;
-    padding: 0.7em;
-    width: 95%;
+    padding: 1em;
+    width: 97%;
     border-radius: 30px 0 0 0;
     margin-top: 1.2em;
 }
@@ -78,33 +106,68 @@ nav{
 
 /* Main */
 
+.scrollDiv {
+    max-height: 100%;
+    overflow: auto;
+}
+
+.scrollContent {
+    height: 1500px;
+}
+
 .sideMain {
     display: flex;
 }
 
 .sideBorder {
-    width: 4.9%;
+    width: 2.95%;
     height: 90vh;
     background-color: #202225;
 }
 
 .leftSections {
     width: 20%;
-    height: 85.5vh;
+    height: 84vh;
     background-color: #2f3136;
     border-radius: 0 0 0 30px;
+    z-index: 20;
+    position: relative;
+}
+
+.gameList {
+    width: 90%;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.gameList li {
+    color: #a3a3a5;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', arial;
+    margin: 0.2em 0.5em;
 }
 
 .centerSections {
-    width: 55%;
-    height: 85.5vh;
+    width: 57%;
+    height: 84vh;
     background-color: #2f3136;
     display: inline;
+    box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.11);
+    z-index: 19;
 }
 
 .rightSections {
-    width: 20.1%;
-    height: 85.5vh;
+    width: 20%;
+    height: 84vh;
     background-color: #2f3136;
     display: inline;
+    z-index: 20;
+}
+
+.articleTitle {
+    color: #a3a3a5;
+    font-size: 22px;
+    margin: 0.5em 1em;
+    font-family: 'Franklin Gothic Medium', arial;
+    text-decoration: underline;
 }
