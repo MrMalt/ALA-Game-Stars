@@ -112,7 +112,8 @@ nav{
 }
 
 .scrollContent {
-    height: 1500px;
+    height: 100%;
+    margin: 0 0 1.5em 0;
 }
 
 .sideMain {
@@ -144,7 +145,7 @@ nav{
     color: #a3a3a5;
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', arial;
-    margin: 0.2em 0.5em;
+    margin: 0.2em 0.7em;
 }
 
 .centerSections {
@@ -167,7 +168,7 @@ nav{
 .articleTitle {
     color: #a3a3a5;
     font-size: 22px;
-    margin: 0.5em 1em;
+    margin: 0.7em 1em;
     font-family: 'Franklin Gothic Medium', arial;
     text-decoration: underline;
 }
