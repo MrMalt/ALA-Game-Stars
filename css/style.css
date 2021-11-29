@@ -1,5 +1,6 @@
 /* General */
 @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+@import url('http://fonts.cdnfonts.com/css/common-pixel');
 
 *, html {
     margin: 0;
@@ -43,10 +44,11 @@ header {
     display: inline;
     position: relative;
     font-weight: 200;
-    font-size: 30px;
-    bottom: 0.25em;
-    color: rgba(255, 255, 255, 0.75);
-    font-family: 'Spinnaker', sans-serif;
+    font-size: 36px;
+    bottom: 0.18em;
+    margin: 0 0.2em;
+    color: rgba(255, 255, 255, 0.90);
+    font-family: 'Common Pixel', sans-serif;
 }
 
 /* Nav Bar */
@@ -156,6 +158,16 @@ nav{
     margin: 0.2em 0.7em;
 }
 
+.gameListItem {
+    color: #a3a3a5;
+    text-decoration: none;
+}
+
+.gameListItem:hover {
+    color: #e3e3e5;
+    text-decoration: none;
+}
+
 .centerSections {
     width: 57%;
     height: 84vh;
@@ -196,35 +208,4 @@ nav{
     margin: 0.5rem 1rem;
     color: #5c5d60;
     padding-bottom: 1rem;
-}
-
-
-.slideshow-container-container{
-	text-align: center;
-	width: 100vw;
-	padding: 0;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 60vw;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-.mySlides img {
-	width: 50vw;
-	margin: 2em auto 1em auto;
-	border: 5px solid #333;
-}
-
-.mySlides fade{
-	display: block;
-	vertical-align: middle;
 }
