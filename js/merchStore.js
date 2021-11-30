@@ -1,7 +1,12 @@
 window.onload = function() 
 {
 	var details = document.getElementById("details");
+
 	document.getElementsByClassName("merchList")[0].addEventListener("click", showDetails);
+    document.getElementsByClassName("merchList")[1].addEventListener("click", showDetails);
+    document.getElementsByClassName("merchList")[2].addEventListener("click", showDetails);
+    document.getElementsByClassName("merchList")[3].addEventListener("click", showDetails);
+    document.getElementsByClassName("merchList")[4].addEventListener("click", showDetails);
 
 	document.getElementById("detailsCancel").addEventListener("click", hideDetails);
 	document.getElementById("detailsBackground").addEventListener("click", hideDetails);
