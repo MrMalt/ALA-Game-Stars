@@ -177,6 +177,12 @@ nav{
     z-index: 19;
 }
 
+.slidePlaceholder {
+    width: 90%;
+    margin: 1.5em auto 0;
+    display: block;
+}
+
 .rightSections {
     width: 20%;
     height: 84vh;
@@ -209,3 +215,50 @@ nav{
     color: #5c5d60;
     padding-bottom: 1rem;
 }
+
+/* Slideshow */
+
+.slideShowContainer {
+    margin: 1.5em auto;
+    width: 88%;
+    height: 420px;
+    border: 7px solid;
+    border-top-color: #424549;
+    border-left-color: #282b30;
+    border-bottom-color: #424549;
+    border-right-color: #282b30;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideShowPhoto {
+    width: 100%;
+    animation: round 16s infinite;
+    position: absolute;
+    opacity: 0;
+}
+
+@keyframes round {
+    25% {
+    opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+}
+
+img:nth-child(1) {
+    animation-delay: 12s;
+  }
+   
+  img:nth-child(2) {
+    animation-delay: 8s;
+  }
+   
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+   
+  img:nth-child(4) {
+    animation-delay: 0s;
+  }
