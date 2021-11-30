@@ -1,15 +1,18 @@
 /* General */
-@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 @import url('http://fonts.cdnfonts.com/css/common-pixel');
 
 *, html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 body {
     overflow: hidden;
     background-color: #202225;
+    height: 100%;
+    position: fixed;
 }
 
 /* Scroll-Bars */
@@ -128,6 +131,7 @@ nav{
 
 .sideMain {
     display: flex;
+    height: 85%;
 }
 
 .sideBorder {
@@ -138,6 +142,15 @@ nav{
 
 .leftSections {
     width: 20%;
+    height: 84vh;
+    background-color: #2f3136;
+    border-radius: 0 0 0 30px;
+    z-index: 20;
+    position: relative;
+}
+
+.leftSectionsMerch {
+    width: 13%;
     height: 84vh;
     background-color: #2f3136;
     border-radius: 0 0 0 30px;
@@ -170,6 +183,15 @@ nav{
 
 .centerSections {
     width: 57%;
+    height: 84vh;
+    background-color: #2f3136;
+    display: inline;
+    box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.11);
+    z-index: 19;
+}
+
+.centerSectionsMerch {
+    width: 84%;
     height: 84vh;
     background-color: #2f3136;
     display: inline;
@@ -237,6 +259,136 @@ nav{
     position: absolute;
     opacity: 0;
 }
+
+/* Webshop */
+
+.merchList {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	list-style: none;
+    width: 90%;
+	margin: 1.5em auto;
+	padding: 0;
+}
+
+.merchList img {
+	width: 94%;
+	pointer-events: none;
+    border: 7px solid;
+    border-top-color: #424549;
+    border-left-color: #282b30;
+    border-bottom-color: #424549;
+    border-right-color: #282b30;
+}
+
+.merchListItem {
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+    width: 80%;
+}
+
+.merchListItemTitle {
+    color: #a3a3a5;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', arial;
+    margin: 0.2em auto;
+}
+
+
+.price {
+    color: #a3a3a5;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', arial;
+	background-color: #202225;
+	display: block;
+	width: 80px;
+	text-align: center;
+	padding: 30px 0;
+	border-radius: 100%;
+	transform: rotate(10deg);
+	position: absolute;
+	right: 10px;
+	top: 30px;
+}
+
+#details {
+	display: none;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	transition: opacity 300ms;
+}
+
+#details.is-visible {
+	display: block;
+	opacity: 100;
+
+}
+
+#detailsBackground {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#detailsDialog {
+	width: calc(60vw - 80px);
+	padding: 40px;
+	position: fixed;
+	top: 20vh;
+	left: 20vw;
+	background-color: #ffffff;
+}
+
+#details h3 {
+	font-size: 1.8em;
+	margin: 0 0 0 0.5em 0;
+}
+
+#details figure {
+	background-color: #eeeeee;
+	margin: 0;
+	padding: 1em 0;
+}
+
+#details img {
+	display: block;
+	margin: auto;
+	max-height: 250px;
+}
+
+#details button {
+	font-size: 1.2em;
+	padding: 0.5em;
+	color: #ffffff;
+	background-color: #cc0000;
+	border: 2px solid #ffffff;
+}
+
+#details #detailsCancel {
+	display: inline;
+	margin-left: 1em;
+}
+
+#details a {
+	color: #cc0000;
+}
+
+@media (max-width: 1000px) {
+	ul
+	{
+		grid-template-columns: 1fr;
+		margin: 5em;
+		padding: 1em;
+	}
+}
+
+/* Slideshow 2 */
 
 @keyframes round {
     25% {
