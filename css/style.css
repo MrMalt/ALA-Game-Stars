@@ -267,7 +267,9 @@ nav{
 	list-style: none;
     width: 90%;
 	margin: 1.5em auto;
-	padding: 0;
+	padding: 1.5em 1.5em 1em;
+    border-radius: 15px;
+    background-color: #282b30;
 }
 
 .merchList img {
