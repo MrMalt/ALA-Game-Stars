@@ -508,3 +508,59 @@ textarea {
     height: 10em;
     margin-bottom: 1em
 }
+
+.borderBox {
+    width: 90%;
+    margin: 2em auto;
+    border: 7px solid;
+    border-top-color: #424549;
+    border-left-color: #282b30;
+    border-bottom-color: #424549;
+    border-right-color: #282b30;
+}
+
+table.blueTable {
+    font-family: 'Franklin Gothic Medium', arial;
+    background-color: #424549;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  table.blueTable td, table.blueTable th {
+    border: 1px solid #54585e;
+    padding: 0.5em 2px;
+  }
+  table.blueTable tbody td {
+    font-size: 16px;
+    color: #dedede;
+  }
+  table.blueTable tr:nth-child(even) {
+    background: #36393E;
+  }
+  table.blueTable thead {
+    background: #5865f2;
+    border-bottom: 2px solid #444444;
+  }
+  table.blueTable thead th {
+    font-size: 18px;
+    font-weight: bold;
+    color: #dedede;
+    border-left: 1px solid #282B30;
+  }
+  table.blueTable thead th:first-child {
+    border-left: none;
+  }
+  
+  table.blueTable tfoot td {
+    font-size: 14px;
+  }
+  table.blueTable tfoot .links {
+    text-align: right;
+  }
+  table.blueTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #dedede;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
