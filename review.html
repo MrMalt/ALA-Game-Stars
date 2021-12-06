@@ -8,7 +8,6 @@
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     </head>
     <body>
-        <!--onload="alert('Disclaimer!\n\nGame Stars haalt haar informatie van een externe derde partij\n\n Het kan zijn sommige informatie verouderd/inaccuraat is');"-->
         <header>
             <article class="sideTopSpacer"></article>
             <nav>
@@ -79,7 +78,6 @@
                         <h1 class="articleTitle">Write a review</h1>
                         <div id="checkoutSection">
                             <div id="checkoutInput">
-                                <form>
                                     <label for="firstname">First Name*</label>
                                     <input type="text" id="firstname" name="firstname" />
                                     <label for="lastname">Last Name*</label>
@@ -87,6 +85,8 @@
                                     <label for="email">E-mail*</label>
                                     <input type="email" id="email" name="email" />
                                     <!--Datum-->
+                                    <label for="reviewDate">Date:</label>
+                                    <input type="date" id="reviewDate" name="reviewDate">
                                     <label for="country">Game*</label> 
                                     <select id="country" name="country" class="form-control">
                                         <option value="Pick a game">Pick a game</option>
@@ -102,11 +102,32 @@
                                         <option value="Rocket League">Rocket League</option>
                                     </select>
                                     <!--Cijfer-->
-                                    <label for="email">Telephone</label>
-                                    <input type="tel" id="telephone" name="telephone" />
+                                <form class="reviewNumbers">
+                                    <input type="radio" id="number1" name="reviewRating" value="1">
+                                    <label for="number1">1</label><br>
+                                    <input type="radio" id="number2" name="reviewRating" value="2">
+                                    <label for="number2">2</label><br>
+                                    <input type="radio" id="number3" name="reviewRating" value="3">
+                                    <label for="number3">3</label>
+                                    <input type="radio" id="number4" name="reviewRating" value="4">
+                                    <label for="number4">4</label><br>
+                                    <input type="radio" id="number5" name="reviewRating" value="5">
+                                    <label for="number5">5</label><br>
+                                    <input type="radio" id="number6" name="reviewRating" value="6">
+                                    <label for="number6">6</label>
+                                    <input type="radio" id="number7" name="reviewRating" value="7">
+                                    <label for="number7">7</label>
+                                    <input type="radio" id="number8" name="reviewRating" value="8">
+                                    <label for="number8">8</label><br>
+                                    <input type="radio" id="number9" name="reviewRating" value="9">
+                                    <label for="number9">9</label><br>
+                                    <input type="radio" id="number10" name="reviewRating" value="10">
+                                    <label for="number10">10</label>
                                 </form>
+                                    <label for="review">Review</label>
+                                    <textarea id="review" name="review"></textarea>
                             </div>
-                            <button class="checkoutButton" onclick=" alert('Order succesfull! We will send you a mail with your order and shipping information'); window.location.href='merchStore.html';">Order now</button>
+                            <button class="checkoutButton" onclick=" alert('Your Review has been submitted');">Submit Review</button>
                         </div>
                     </article>
                 </article>

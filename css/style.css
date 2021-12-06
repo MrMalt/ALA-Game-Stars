@@ -525,42 +525,50 @@ table.blueTable {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
-  }
-  table.blueTable td, table.blueTable th {
+}
+
+table.blueTable td, table.blueTable th {
     border: 1px solid #54585e;
     padding: 0.5em 2px;
-  }
-  table.blueTable tbody td {
+}
+
+table.blueTable tbody td {
     font-size: 16px;
     color: #dedede;
-  }
-  table.blueTable tr:nth-child(even) {
+}
+
+table.blueTable tr:nth-child(even) {
     background: #36393E;
-  }
-  table.blueTable thead {
+}
+
+table.blueTable thead {
     background: #5865f2;
     border-bottom: 2px solid #444444;
-  }
-  table.blueTable thead th {
+}
+
+table.blueTable thead th {
     font-size: 18px;
     font-weight: bold;
     color: #dedede;
     border-left: 1px solid #282B30;
-  }
-  table.blueTable thead th:first-child {
+}
+
+table.blueTable thead th:first-child {
     border-left: none;
-  }
+}
   
-  table.blueTable tfoot td {
+table.blueTable tfoot td {
     font-size: 14px;
-  }
-  table.blueTable tfoot .links {
+}
+
+table.blueTable tfoot .links {
     text-align: right;
-  }
-  table.blueTable tfoot .links a{
+}
+
+table.blueTable tfoot .links a {
     display: inline-block;
     background: #1C6EA4;
     color: #dedede;
     padding: 2px 8px;
     border-radius: 5px;
-  }
+}
