@@ -410,15 +410,6 @@ nav{
     text-decoration: none;
 }
 
-@media (max-width: 1000px) {
-	ul
-	{
-		grid-template-columns: 1fr;
-		margin: 5em;
-		padding: 1em;
-	}
-}
-
 /* Slideshow 2 */
 
 @keyframes round {
