@@ -570,7 +570,7 @@ table.blueTable tfoot .links a {
     width: 90%;
     margin: 0 auto;
     position: relative;
-    right: 71%
+    right: 70%
 }
 .rate:not(:checked) > input {
     position:absolute;
