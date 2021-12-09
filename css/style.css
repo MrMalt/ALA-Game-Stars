@@ -9,7 +9,7 @@
 
 nav{
     width: 100vw;
-    background-color: #36393f;
+    background-color: #1f396d;
     padding: 1.5em;
 }
 
@@ -27,6 +27,8 @@ nav{
 }
 
 .nav-links li a{
+    position: relative;
+    right: 20px;
     font-size: 18px;
     text-decoration: none;
     transition: all ease-in-out 200ms;
