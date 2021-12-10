@@ -608,3 +608,12 @@ table.blueTable tfoot .links a {
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
 }
+
+/* Sem */
+
+.newsSnippet .textBox img {
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
