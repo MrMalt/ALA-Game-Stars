@@ -610,8 +610,10 @@ table.blueTable tfoot .links a {
 }
 
 /* Sem */
-.scrollContent > iframe {
-    position: relative;
-    left: 14px;
-    top: 10px;
+
+.newsSnippet .textBox img {
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
