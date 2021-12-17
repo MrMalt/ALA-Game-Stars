@@ -626,7 +626,13 @@ table.blueTable tfoot .links a {
     border-right-color: #282b30;
 }
 
-@media (max-width: 600px)
+.pcImage {
+    display: none;
+    width: 80%;
+    margin: 5em auto;
+}
+
+@media (max-width: 930px)
 {
     header {
         display: none;
