@@ -194,7 +194,7 @@ nav{
 }
 
 .centerSectionsMerch {
-    width: 81%;
+    width: 79%;
     height: 84vh;
     background-color: #2f3136;
     display: inline;
@@ -609,11 +609,38 @@ table.blueTable tfoot .links a {
     color: #c59b08;
 }
 
-/* Sem */
+.memberImage {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 1.2rem;
+}
 
-.newsSnippet .textBox img {
-    height: 50px;
-    width: 50px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+.youtubeDiv {
+    display: block;
+    margin: 1.5em auto;
+    border: 7px solid;
+    border-top-color: #424549;
+    border-left-color: #282b30;
+    border-bottom-color: #424549;
+    border-right-color: #282b30;
+}
+
+@media (max-width: 600px)
+{
+    header {
+        display: none;
+    }
+    .sideMain {
+        display: none;
+    }
+    section {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .pcImage {
+        display: block;
+    }
 }
